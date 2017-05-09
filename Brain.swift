@@ -31,8 +31,10 @@ class Brain {
         return "FizzBuzz"
         } else if isDivisibleByThree(number: number){
             return "Fizz"
-        } else {
+        } else if isDivisibleByFive(number: number){
             return "Buzz"
+        } else {
+            return "\(number)"
         }
     }
 }
